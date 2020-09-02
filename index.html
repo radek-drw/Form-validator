@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form validator</title>
+   <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/82e3298cb6.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <section class="container">
+      <h2 class="page__title">Agency 2020 <span class="title__underline"></span></h2>
+      <h3 class="contact-form">Contact form</h3>
+
+      <form action="#" class="form">
+
+         <fieldset class="form__fieldset">
+            <label for="email" class="form__label">E-mail address<span class="form__label-required">*</span></label>
+            <input type="text" name="email" class="form__field" id="email">
+         </fieldset>
+
+         <fieldset class="form__fieldset name-left">
+            <label for="name" class="form__label">Name<span class="form__label-required">*</span></label>
+            <input type="text" name="name" class="form__field" id="name">
+         </fieldset>
+
+         <fieldset class="form__fieldset subject-right">
+            <label for="name" class="form__label">Subject</label>
+            <select name="subject" class="form__field" id="subject">
+               <option value="" disabled selected>-- Select a topic --</option>
+               <option value="help">Help</option>
+               <option value="question">Question</option>
+            </select>
+         </fieldset>
+
+         <fieldset class="form__fieldset">
+            <label for="message" class="form__label">Message<span class="form__label-required">*</span></label>
+            <textarea name="message" class="form__field" id="message"></textarea>
+         </fieldset>
+
+         <button class="form__submit-btn">Submit</button>
+      </form>
+   </section>
+
+   <footer class="social">
+      <ul class="social__list">
+         <li class="social__icon">
+            <a href="#">
+               <i class="fab fa-facebook"></i><span class="hidden-for-media">Facebook</span>
+            </a>
+         </li>
+         <li class="social__icon">
+            <a href="#">
+               <i class="fab fa-twitter"></i><span class="hidden-for-media">Twitter</span>
+            </a>
+         </li>
+         <li class="social__icon">
+            <a href="#">
+               <i class="fab fa-instagram"></i><span class="hidden-for-media">Instagram</span>
+            </a>
+         </li>
+         <li class="social__icon">
+            <a href="#">
+               <i class="fab fa-google-plus-square"></i><span class="hidden-for-media">Google plus</span>
+            </a>
+         </li>
+         <li class="social__icon">
+            <a href="#">
+               <i class="fab fa-youtube"></i><span class="hidden-for-media">Youtube</span>
+            </a>
+         </li>
+      </ul>
+   </footer>
+
+   <script src="main.js"></script>
+</body>
+
+</html>
