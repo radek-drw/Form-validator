@@ -16,12 +16,15 @@ class Validator {
       p.innerHTML = errors.join('<br>');
       form.insertBefore(p, form.children[0]);
    }
+
    isEmail(text) {
       return text.indexOf('@') !== -1;
    }
+
    isNotEmpty(text) {
       return text !== '';
    }
+
    validate(e) {
       e.preventDefault();
       this.errors = [];
